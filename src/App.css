@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  font-family: sans-serif;
+}
+body {
+  background-color: rgb(198, 198, 199);
+  /* background: linear-gradient(
+    180deg,
+    rgb(184 25 120 / 78%) 46%,
+    #252325c7,
+    #060606b0,
+    #161616ab 100% 58%,
+    rgb(255, 255, 255) 100%
+  ); */
+  background-color: #0305807c;
+}
+.full_container {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.box_container {
+  min-width: 100px;
+  max-width: 500px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(242, 248, 248);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.box_container:hover {
+  transform: translateY(-30px);
+}
+.box_container:hover .box_button {
+  background-color: rgb(212, 13, 112);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content_type {
+  font-size: 15px;
+  color: gray;
+  letter-spacing: 2px;
+}
+.content_number {
+  margin: 16px 0px;
+  font-size: 46px;
+  font-weight: 500;
+  color: rgb(54, 5, 168);
+}
+.dollar {
+  font-size: 25px;
+  margin-right: 6px;
+  vertical-align: super;
+  font-weight: normal;
+  color: rgb(231, 9, 120);
+}
+.content_number span {
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: normal;
+  color: gray;
+}
+.main_content {
+  border-top: 1px solid rgb(172, 172, 172);
+}
+.main_content_list {
+  margin-top: 20px;
+}
+.main_content_list p {
+  margin: 10px 0px;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.icons {
+  font-size: 25px;
+  font-weight: 700;
+  vertical-align: sub;
+  stroke: rgb(15, 189, 15);
+  color: rgb(20, 204, 20);
+  margin-right: 7px;
+}
+.clear_icon {
+  color: rgba(255, 0, 0, 0.603);
+  stroke: rgba(255, 0, 0, 0.308);
+}
+.text_muted {
+  color: rgb(177, 172, 172);
+}
+/* button */
+.box_button {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(52, 8, 155, 0.603);
+  margin-top: 10px;
+  padding: 13px 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.box_button:hover {
+  background-color: rgb(201, 19, 19);
+}
